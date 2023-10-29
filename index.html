@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Website</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+</head>
+
+
+<body>
+<div>
+  <h1 style="font-weight: bold; color: rgb(255, 255, 255); margin-top: 90px;"> Harmonize Health: Music Therapy and Rhythmic Wellness </h1>
+
+<div class = "contain">
+
+<div class = "image">
+  <img src="Music-Therapy.png" alt="Big Picture">
+
+</div>
+<p class="description-container">
+  <span style="font-weight: bold; color:  aq; font-size: x-large;">
+    Discovering the Healing Power of Rhythm
+  </span> <br> <br>
+  Music therapy, a recognized healthcare profession, harnesses 
+  the profound influence of music and rhythm to address diverse physical, emotional, cognitive, and social needs.<br>
+  <br> It's an invaluable tool in healthcare, aiding individuals dealing with issues like trauma, developmental disorders, and chronic pain. <br>
+  <br> Beyond therapy sessions, the harmony of rhythm transcends boundaries. Our website explores the connection between music therapy and technology, offering a unique platform to find other music with similar rhythms. 
+  <br> <br> We believe that connecting individuals with music that resonates on a rhythmic level can further enhance the therapeutic benefits of music, fostering healing, well-being, and resilience in the healthcare industry.
+</p>
+</div>
+<div class="navigation-buttons">
+  <button onclick="goToInput()">Search</button>
+</div>
+
+<div class="input" id="input-container">
+    <div class="input-row">
+        <p style="font-weight: bold;"> 
+              Enter The Song Title:
+         </p>
+      <input type="text" id="inputBar">
+      <button id="TitleButton">Find</button>
+    </div>
+    <div class="input-row">
+        <p style="font-weight: bold;">Enter The Spotify Url: </p>
+      <input type="url" id="inputLink">
+      <button id="UrlButton">Find</button>
+    </div>
+
+    <div class="input-row">
+      <p style="font-weight: bold;"> The Number of Songs: </p>
+    <input type="number" id="inputNum">
+    <button id="NumButton">Find</button>
+  </div>
+
+     <div>
+
+
+<div class="song-table">
+  <table>
+    <thead>
+      <tr>
+        <th>Song Title</th>
+        <th>Spotify URL</th>
+      </tr>
+    </thead>
+    <tbody id="song-list">
+      Table rows will be inserted here based on the number of songs
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

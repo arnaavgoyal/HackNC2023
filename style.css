@@ -1,0 +1,135 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  display: grid;
+  background-image: linear-gradient(to bottom, #201f26, #201f26);
+  margin: 0; 
+  padding: 0; 
+  height: 100vh;
+  overflow:auto
+}
+
+
+
+.description-container {
+  height: 60vh; /* Allow the container to expand based on content */
+  padding:20px; /* Add padding for spacing */
+  text-align: center; /* Center the text horizontally */
+  color: rgb(247, 246, 247); /* Set text color to yellow */
+  font-weight: 500;
+  font-size: larger;
+  border: 2px solid rgb(189, 172, 172);
+  opacity: 0.8;
+  font-family: 'Inter', sans-serif;
+  flex:1;
+
+  }
+  
+  
+  .image {
+  justify-content: center;
+  padding: 30px;
+  /* background-color: rgb(142, 142, 132); */
+  }
+  
+  
+  .contain{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  }
+  
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.input {
+
+      position: relative;
+      top: 50%;  /* Add this line to start 50% from the top */
+      width: 100%;
+      background-color: #787b8d;
+      display: flex; /* You already have this line */
+      flex-direction: column; /* You already have this line */
+      align-items: center; /* You already have this line */
+      justify-content: center; /* Add this line */
+  
+}
+
+.input-row {
+  margin-top: 60px;
+  display: flex;  /* Changed from display: block; */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;  /* Add this line if you want to take full width */
+}
+
+.input-row p {
+  display: block; /* This will put the <p> on its own line */
+  font-weight: bold;
+  margin-right: 20px;
+  margin-bottom: 10px; /* Adjust as needed for spacing between the label and the input */
+  text-align: center; /* This will center the text */
+} 
+
+.input-row input {
+  display: block;
+  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px; 
+  border: 2px solid transparent; 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.input-row input:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.input-row button {
+  display: block;
+  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: aquamarine;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-row button:hover {
+  box-shadow: 0 0 15px rgba(246, 246, 246, 0.9);
+}
+
+.findButton {
+  position: absolute;
+}
+
+.navigation-buttons {
+  position: fixed;
+  right: 5%;  /* Changed from left: 0; to right: 0; */
+  top: 6%;
+  transform: translateY(-50%);
+}
+
+.navigation-buttons button {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1em;
+  padding: 15px 30px;  /* Increase padding to make it bubble-like */
+  border-radius: 50px;  /* Rounded corners */
+  background-color: aquamarine;
+  border: 2px solid black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  /* Add some shadow */
+  transition: all 0.3s ease;  /* Smooth transition for hover effects */
+}
+
+.navigation-buttons button:hover {
+  box-shadow: 0 0 5px rgba(216, 216, 216, 0.9);
+}
